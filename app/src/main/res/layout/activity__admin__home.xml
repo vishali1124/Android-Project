@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home_background"
+    tools:context=".activity_home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@drawable/bin"
+                android:textAlignment="center"
+                android:text="@string/cleanit"
+                android:textSize="36sp"
+                android:gravity="top"
+                android:textColor="@color/darkGreen" />
+
+            /*First Row Start*/
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:baselineAligned="false">
+
+                /*Profile*/
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp"
+                    android:orientation="vertical"
+                    android:background="@color/brown">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/profile"
+                        android:contentDescription="TODO" />
+
+                    <TextView
+                        android:id="@+id/Collector"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:padding="8dp"
+                        android:text="@string/collector"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                /*Schedule*/
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/brown"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/schedule"
+                        android:contentDescription="TODO" />
+
+                    <TextView
+                        android:id="@+id/Schedule"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:padding="8dp"
+                        android:text="Schedule"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                /*Schedule*/
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/brown"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/price" />
+
+                    <TextView
+                        android:id="@+id/Payment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:padding="8dp"
+                        android:text="@string/priceadd"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+            /*First Row End */
+
+            <Button
+                android:id="@+id/Logout"
+                android:layout_width="150dp"
+                android:layout_height="50px"
+                android:background="@color/darkGreen"
+                android:text="Logout"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="10dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

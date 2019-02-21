@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    tools:context=".activity_adds">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@drawable/bin"
+                android:gravity="top"
+                android:text="cleanIT"
+                android:textAlignment="center"
+                android:textColor="@color/darkGreen"
+                android:textSize="36sp" />
+
+            /*First Row Start*/
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_margin="15dp"
+                android:background="@drawable/offer1"
+
+                android:weightSum="3">
+
+            </LinearLayout>
+            /*First Row End */
+
+            /*Second Row Start*/
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_margin="15dp"
+                android:background="@drawable/offer2"
+                android:weightSum="3">
+
+
+            </LinearLayout>
+            /*Second Row End */
+
+            /*3rd Row Start*/
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_margin="15dp"
+                android:background="@drawable/offer3"
+                android:weightSum="3">
+
+
+            </LinearLayout>
+            /*3rd Row End */
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

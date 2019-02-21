@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vishali.androidproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity_welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity_Login" />
+        <activity android:name=".activity_Register" />
+        <activity android:name=".activity_Forgot" />
+        <activity android:name=".activity_UserProfile" />
+        <activity android:name=".activity_adds" />
+        <activity android:name=".activity_Profile" />
+        <activity android:name=".activity_about_us" />
+        <activity android:name=".jMainActivity" />
+        <activity android:name=".activity_Admin_Home" />
+        <activity android:name=".activity_Admin_Login" />
+        <activity android:name=".activity_home" />
+        <activity android:name=".jMainActivity2" />
+        <activity android:name=".jCollectorSchedule" />
+        <activity android:name=".activity_Login_Admin" />
+        <activity android:name=".Activity4calc" />
+        <activity android:name=".Activity3admin" />
+        <activity android:name=".PaymentAdd" />
+        <activity android:name=".Activity2" />
+        <activity android:name=".activity_collector_Login" />
+        <activity android:name=".activity_collector" />
+        <activity android:name=".activity_Booking_customer" />
+        <activity android:name=".activity_view_booking" />
+        <activity android:name=".activity_view_price"></activity>
+    </application>
+
+</manifest>
